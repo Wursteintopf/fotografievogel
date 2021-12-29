@@ -1,0 +1,26 @@
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_imagebox_alignment}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_imagebox_alignment" /></strong>
+    {processedRow.tx_fotografievogelmaskexport_imagebox_alignment.0} (raw={row.tx_fotografievogelmaskexport_imagebox_alignment})<br>
+</f:if>
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_imagebox_header}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_imagebox_header" /></strong>
+    {processedRow.tx_fotografievogelmaskexport_imagebox_header} (raw={row.tx_fotografievogelmaskexport_imagebox_header})<br>
+</f:if>
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_imagebox_text}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_imagebox_text" /></strong>
+    {processedRow.tx_fotografievogelmaskexport_imagebox_text} (raw={row.tx_fotografievogelmaskexport_imagebox_text})<br>
+</f:if>
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_imagebox_image}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_imagebox_image" /></strong>
+<br><f:for each="{processedRow.tx_fotografievogelmaskexport_imagebox_image}" as="item">
+    <ul>
+        <li>
+    <ul>
+        <f:for each="{item.uid_local}" as="file">
+            <li><f:translate key="LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.uid_local" /> {file.table}|{file.uid}|{file.title} (id={item.uid})</li>
+        </f:for>
+    </ul>
+        </li>
+    </ul>
+</f:for>
+</f:if>
