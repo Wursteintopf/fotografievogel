@@ -1,0 +1,11 @@
+<f:if condition="{data.tx_fotografievogelmaskexport_headerteaser_title}">
+    {data.tx_fotografievogelmaskexport_headerteaser_title}<br />
+</f:if>
+
+<f:if condition="{data_tx_fotografievogelmaskexport_headerteaser_image}">
+    <f:for each="{data_tx_fotografievogelmaskexport_headerteaser_image}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+

@@ -1,0 +1,41 @@
+<f:if condition="{data.tx_fotografievogelmaskexport_contentteaser_header}">
+    {data.tx_fotografievogelmaskexport_contentteaser_header}<br />
+</f:if>
+
+<f:if condition="{data.tx_fotografievogelmaskexport_contentteaser_description}">
+    <f:format.nl2br>{data.tx_fotografievogelmaskexport_contentteaser_description}</f:format.nl2br><br />
+</f:if>
+
+<f:if condition="{data_tx_fotografievogelmaskexport_contentteaser_element}">
+    <ul>
+        <f:for each="{data_tx_fotografievogelmaskexport_contentteaser_element}" as="data_item">
+            <li>
+                <f:if condition="{data_item.data.tx_fotografievogelmaskexport_contentteaser_title}">
+    {data_item.data.tx_fotografievogelmaskexport_contentteaser_title}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_fotografievogelmaskexport_contentteaser_text}">
+    <f:format.nl2br>{data_item.data.tx_fotografievogelmaskexport_contentteaser_text}</f:format.nl2br><br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_fotografievogelmaskexport_contentteaser_link_text}">
+    {data_item.data.tx_fotografievogelmaskexport_contentteaser_link_text}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_fotografievogelmaskexport_contentteaser_link}">
+    <f:link.page pageUid="{data_item.data.tx_fotografievogelmaskexport_contentteaser_link}">{data_item.data.tx_fotografievogelmaskexport_contentteaser_link}</f:link.page><br />
+</f:if>
+
+<f:if condition="{data_item.data_tx_fotografievogelmaskexport_contentteaser_image}">
+    <f:for each="{data_item.data_tx_fotografievogelmaskexport_contentteaser_image}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+
+
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+

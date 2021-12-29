@@ -1,0 +1,18 @@
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_headerteaser_title}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_headerteaser_title" /></strong>
+    {processedRow.tx_fotografievogelmaskexport_headerteaser_title} (raw={row.tx_fotografievogelmaskexport_headerteaser_title})<br>
+</f:if>
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_headerteaser_image}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_headerteaser_image" /></strong>
+<br><f:for each="{processedRow.tx_fotografievogelmaskexport_headerteaser_image}" as="item">
+    <ul>
+        <li>
+    <ul>
+        <f:for each="{item.uid_local}" as="file">
+            <li><f:translate key="LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.uid_local" /> {file.table}|{file.uid}|{file.title} (id={item.uid})</li>
+        </f:for>
+    </ul>
+        </li>
+    </ul>
+</f:for>
+</f:if>

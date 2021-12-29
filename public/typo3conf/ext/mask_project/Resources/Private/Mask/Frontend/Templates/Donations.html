@@ -1,0 +1,6 @@
+<f:if condition="{data.tx_mask_donations_image}">
+    <f:for each="{data.tx_mask_donations_image}" as="file">
+        <f:image image="{file}" width="200" />
+        {file.description}
+    </f:for>
+</f:if>

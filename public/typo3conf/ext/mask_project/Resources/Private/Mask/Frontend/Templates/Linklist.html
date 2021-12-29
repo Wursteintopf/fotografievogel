@@ -1,0 +1,18 @@
+<f:variable name="linklistVariant" value="{data.tx_mask_linklist_variant}"/>
+<f:if condition="{data.tx_mask_linklist_title}">
+    {data.tx_mask_linklist_title}
+</f:if>
+<f:if condition="{data.tx_mask_linklist_links}">
+    <ul>
+        <f:for each="{data.tx_mask_linklist_links}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_linklist_item_text}">
+                    {data_item.tx_mask_linklist_item_text}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_linklist_item_link}">
+                    <f:link.typolink parameter="{data_item.tx_mask_linklist_item_link}"></f:link.typolink>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

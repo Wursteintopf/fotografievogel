@@ -1,0 +1,8 @@
+# cat=fotografie_vogel_mask_export/file; type=string; label=Path to template root (FE)
+plugin.tx_fotografievogelmaskexport.view.templateRootPath =
+
+# cat=fotografie_vogel_mask_export/file; type=string; label=Path to template partials (FE)
+plugin.tx_fotografievogelmaskexport.view.partialRootPath =
+
+# cat=fotografie_vogel_mask_export/file; type=string; label=Path to template layouts (FE)
+plugin.tx_fotografievogelmaskexport.view.layoutRootPath =

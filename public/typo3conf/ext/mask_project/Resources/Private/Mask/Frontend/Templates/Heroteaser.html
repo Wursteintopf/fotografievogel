@@ -1,0 +1,15 @@
+<f:if condition="{data.tx_mask_heroteaser_tagline}">
+    {data.tx_mask_heroteaser_tagline}
+</f:if>
+<f:if condition="{data.tx_mask_heroteaser_text}">
+    {data.tx_mask_heroteaser_text -> f:format.nl2br()}
+</f:if>
+<f:if condition="{data.tx_mask_heroteaser_cta}">
+    <f:link.typolink parameter="{data.tx_mask_heroteaser_cta}"></f:link.typolink>
+</f:if>
+<f:if condition="{data.tx_mask_heroteaser_image}">
+    <f:for each="{data.tx_mask_heroteaser_image}" as="file">
+        <f:image image="{file}" width="200" />
+        {file.description}
+    </f:for>
+</f:if>

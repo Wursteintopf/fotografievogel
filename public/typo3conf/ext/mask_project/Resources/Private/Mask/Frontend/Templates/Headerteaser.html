@@ -1,0 +1,9 @@
+<f:if condition="{data.tx_mask_headerteaser_title}">
+    {data.tx_mask_headerteaser_title}
+</f:if>
+<f:if condition="{data.tx_mask_headerteaser_image}">
+    <f:for each="{data.tx_mask_headerteaser_image}" as="file">
+        <f:image image="{file}" width="200" />
+        {file.description}
+    </f:for>
+</f:if>

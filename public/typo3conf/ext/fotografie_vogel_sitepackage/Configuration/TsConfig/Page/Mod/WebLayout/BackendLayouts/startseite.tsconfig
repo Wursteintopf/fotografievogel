@@ -1,0 +1,41 @@
+#
+# BACKENDLAYOUT: DEFAULT
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            startseite {
+                title = Startseite
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = HeroTeaser
+                                        colPos = 0
+                                        allowed {
+                                            CType = fotografievogelmaskexport_heroteaser
+                                        }
+                                        maxitems = 1
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Content
+                                        colPos = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:fotografie_vogel_sitepackage/Resources/Public/Images/BackendLayouts/default.png
+            }
+        }
+    }
+}

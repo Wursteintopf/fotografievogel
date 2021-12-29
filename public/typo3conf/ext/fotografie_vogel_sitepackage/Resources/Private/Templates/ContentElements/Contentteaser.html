@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:vv="Vogelvlug\FotografieVogelSitepackage\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="container">
+    <div class="contentteaser">
+        <f:if condition="{data.tx_fotografievogelmaskexport_contentteaser_header}">
+            <h2>{data.tx_fotografievogelmaskexport_contentteaser_header}</h2>
+        </f:if>
+
+        <f:if condition="{data.tx_fotografievogelmaskexport_contentteaser_description}">
+            <div class="contentteaser--description">
+                <f:format.nl2br>{data.tx_fotografievogelmaskexport_contentteaser_description}</f:format.nl2br><br />
+            </div>
+        </f:if>
+
+        <f:if condition="{data_tx_fotografievogelmaskexport_contentteaser_element}">
+            <div class="contentteaser--elements">
+                <f:for each="{data_tx_fotografievogelmaskexport_contentteaser_element}" as="element">
+                    <div class="contentteaser--elements--element" style="background-image: url('{f:uri.image(image: element.data_tx_fotografievogelmaskexport_contentteaser_image.0)}');">
+                        <div class="contentteaser--elements--element--box">
+                            <h4>{element.data.tx_fotografievogelmaskexport_contentteaser_title}</h4>
+                            <p>
+                                {element.data.tx_fotografievogelmaskexport_contentteaser_text}
+                            </p>
+                            <div class="button button--white button--small">
+                                <f:link.typolink parameter="{element.data.tx_fotografievogelmaskexport_contentteaser_link}">
+                                    {element.data.tx_fotografievogelmaskexport_contentteaser_link_text}
+                                    <f:image src="EXT:fotografie_vogel_sitepackage/Resources/Public/Icons/ArrowForwardWhite.svg" />
+                                </f:link.typolink>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>
+        </f:if>
+    </div>
+</div>

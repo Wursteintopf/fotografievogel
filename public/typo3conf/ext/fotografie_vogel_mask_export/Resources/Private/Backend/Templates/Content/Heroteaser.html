@@ -1,0 +1,30 @@
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_heroteaser_tagline}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_heroteaser_tagline" /></strong>
+    {processedRow.tx_fotografievogelmaskexport_heroteaser_tagline} (raw={row.tx_fotografievogelmaskexport_heroteaser_tagline})<br>
+</f:if>
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_heroteaser_title}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_heroteaser_title" /></strong>
+    {processedRow.tx_fotografievogelmaskexport_heroteaser_title} (raw={row.tx_fotografievogelmaskexport_heroteaser_title})<br>
+</f:if>
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_heroteaser_description}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_heroteaser_description" /></strong>
+    {processedRow.tx_fotografievogelmaskexport_heroteaser_description} (raw={row.tx_fotografievogelmaskexport_heroteaser_description})<br>
+</f:if>
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_heroteaser_cta}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_heroteaser_cta" /></strong>
+    {processedRow.tx_fotografievogelmaskexport_heroteaser_cta} (raw={row.tx_fotografievogelmaskexport_heroteaser_cta})<br>
+</f:if>
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_heroteaser_image}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_heroteaser_image" /></strong>
+<br><f:for each="{processedRow.tx_fotografievogelmaskexport_heroteaser_image}" as="item">
+    <ul>
+        <li>
+    <ul>
+        <f:for each="{item.uid_local}" as="file">
+            <li><f:translate key="LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.uid_local" /> {file.table}|{file.uid}|{file.title} (id={item.uid})</li>
+        </f:for>
+    </ul>
+        </li>
+    </ul>
+</f:for>
+</f:if>

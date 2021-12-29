@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:vv="Vogelvlug\FotografieVogelSitepackage\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="footer">
+    <div class="container">
+        <div class="footer--content">
+            <div class="footer--contact">
+                <h4>Kontakt</h4>
+                Judith und Markus Vogel<br />
+                kontakt@fotografievogel.de<br />
+                Telegram: @MarkusVogel
+            </div>
+            <div class="footer--social-media">
+                <h4>Folge uns auf SocialMedia</h4>
+                <div class="footer--social-media--links">
+                    <a href="https://www.instagram.com/fotografievogel/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/fotografievogel/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tiktok.com/@fotografievogel/"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="legal">
+    <div class="container">
+        <div class="legal--content">
+            <div class="legal--copyright">
+                © <vv:currentYear /> Fotografie Vogel - Website made with <i class="fas fa-heart"></i> and <i class="fas fa-mug-hot"></i> by <a href="https://vogelvlug.de">Markus Vogel</a>
+            </div>
+
+            <div class="legal--links">
+                <f:if condition="{footerPids} !== ''">
+                    <vv:split stringToSplit="{footerPids}" as="footerLinks" />
+                    <f:for each="{footerLinks}" as="uid">
+                        <f:link.page pageUid="{uid}"><vv:pageTitle pageId="{uid}" /></f:link.page>
+                    </f:for>
+                </f:if>
+            </div>
+        </div>
+    </div>
+</div>

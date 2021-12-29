@@ -1,0 +1,26 @@
+version: '3.1'
+services:
+  db:
+    image: mariadb
+    restart: unless-stopped
+    volumes:
+      - ./sql/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: typo3
+      MYSQL_USER: typo3
+      MYSQL_PASSWORD: 123
+
+  typo3:
+    depends_on:
+      - db
+    image: martinhelmich/typo3:10.4
+    ports:
+      - 80:80
+    restart: unless-stopped
+    volumes:
+      - ./public/typo3conf/ext:/var/www/html/typo3conf/ext
+      - ./config/sites:/var/www/html/typo3conf/sites
+    environment:
+      TYPO3_CONTEXT: Development
+      CURRENT_INSTANCE: local

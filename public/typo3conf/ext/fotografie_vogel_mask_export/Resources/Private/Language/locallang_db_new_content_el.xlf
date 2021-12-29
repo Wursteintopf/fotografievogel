@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2021-12-29T12:04:31+00:00" product-name="fotografie_vogel_mask_export">
+    <header/>
+    <body>
+      <trans-unit id="wizards.newContentElement.contentteaser_title">
+        <source>Content Teaser</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.contentteaser_description">
+        <source>Content Teaser zum Anteasern anderer Seiten</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.gallery_title">
+        <source>Gallerie</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.gallery_description">
+        <source>Gallerieelement zur Anzeige von Bildern als Galerie</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.headerteaser_title">
+        <source>Header Teaser</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.headerteaser_description">
+        <source>Header mit Bild und Überschrift</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.heroteaser_title">
+        <source>HeroTeaser</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.heroteaser_description">
+        <source>Hauptelement auf der Startseite</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

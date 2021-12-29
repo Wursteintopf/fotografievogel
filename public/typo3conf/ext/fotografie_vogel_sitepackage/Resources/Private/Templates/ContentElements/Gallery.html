@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      xmlns:vv="Vogelvlug\FotografieVogelSitepackage\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<v:asset.style path="EXT:fotografie_vogel_sitepackage/Resources/Public/Css/swiper-bundle.min.css" name="swiper_css" dependencies="common_css" />
+<v:asset.script path="EXT:fotografie_vogel_sitepackage/Resources/Public/JavaScript/components/swiper-bundle.min.js" name="swiper-bundle"/>
+
+<div class="container">
+    <div class="gallery">
+        <h2>{data.tx_fotografievogelmaskexport_gallery_title}</h2>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <f:for each="{data_tx_fotografievogelmaskexport_gallery_image_item}" as="image">
+                    <div class="swiper-slide">
+                        <f:image image="{image}" />
+                    </div>
+                </f:for>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</div>

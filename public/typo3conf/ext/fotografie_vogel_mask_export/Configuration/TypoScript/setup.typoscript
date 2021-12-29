@@ -1,0 +1,89 @@
+tt_content.fotografievogelmaskexport_contentteaser = FLUIDTEMPLATE
+tt_content.fotografievogelmaskexport_contentteaser {
+    layoutRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.layoutRootPath}
+    partialRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.partialRootPath}
+    templateRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.templateRootPath}
+    templateName = Contentteaser
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_fotografievogelmaskexport_contentteaser_element
+        table = tx_fotografievogelmaskexport_contentteaser_element
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_fotografievogelmaskexport_contentteaser_element
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_fotografievogelmaskexport_contentteaser_image
+        references {
+            fieldName = tx_fotografievogelmaskexport_contentteaser_image
+            table = tx_fotografievogelmaskexport_contentteaser_element
+        }
+        as = data_tx_fotografievogelmaskexport_contentteaser_image
+    }
+
+}
+}
+tt_content.fotografievogelmaskexport_gallery = FLUIDTEMPLATE
+tt_content.fotografievogelmaskexport_gallery {
+    layoutRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.layoutRootPath}
+    partialRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.partialRootPath}
+    templateRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.templateRootPath}
+    templateName = Gallery
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_fotografievogelmaskexport_gallery_image_item
+        references {
+            fieldName = tx_fotografievogelmaskexport_gallery_image_item
+            table = tt_content
+        }
+        as = data_tx_fotografievogelmaskexport_gallery_image_item
+    }
+}
+tt_content.fotografievogelmaskexport_headerteaser = FLUIDTEMPLATE
+tt_content.fotografievogelmaskexport_headerteaser {
+    layoutRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.layoutRootPath}
+    partialRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.partialRootPath}
+    templateRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.templateRootPath}
+    templateName = Headerteaser
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_fotografievogelmaskexport_headerteaser_image
+        references {
+            fieldName = tx_fotografievogelmaskexport_headerteaser_image
+            table = tt_content
+        }
+        as = data_tx_fotografievogelmaskexport_headerteaser_image
+    }
+}
+tt_content.fotografievogelmaskexport_heroteaser = FLUIDTEMPLATE
+tt_content.fotografievogelmaskexport_heroteaser {
+    layoutRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.layoutRootPath}
+    partialRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.partialRootPath}
+    templateRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.templateRootPath}
+    templateName = Heroteaser
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_fotografievogelmaskexport_heroteaser_image
+        references {
+            fieldName = tx_fotografievogelmaskexport_heroteaser_image
+            table = tt_content
+        }
+        as = data_tx_fotografievogelmaskexport_heroteaser_image
+    }
+}

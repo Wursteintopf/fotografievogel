@@ -1,0 +1,32 @@
+<f:if condition="{data.tx_mask_contentteaser_header}">
+    {data.tx_mask_contentteaser_header}
+</f:if>
+<f:if condition="{data.tx_mask_contentteaser_description}">
+    {data.tx_mask_contentteaser_description -> f:format.nl2br()}
+</f:if>
+<f:if condition="{data.tx_mask_contentteaser_element}">
+    <ul>
+        <f:for each="{data.tx_mask_contentteaser_element}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_contentteaser_title}">
+                    {data_item.tx_mask_contentteaser_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_contentteaser_text}">
+                    {data_item.tx_mask_contentteaser_text -> f:format.nl2br()}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_contentteaser_link_text}">
+                    {data_item.tx_mask_contentteaser_link_text}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_contentteaser_link}">
+                    <f:link.typolink parameter="{data_item.tx_mask_contentteaser_link}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_contentteaser_image}">
+                    <f:for each="{data_item.tx_mask_contentteaser_image}" as="file">
+                        <f:image image="{file}" width="200" />
+                        {file.description}
+                    </f:for>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

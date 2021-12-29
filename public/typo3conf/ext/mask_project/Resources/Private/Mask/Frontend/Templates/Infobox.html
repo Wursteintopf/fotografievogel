@@ -1,0 +1,13 @@
+<f:variable name="infoboxVariant" value="{data.tx_mask_infobox_variant}"/>
+<f:if condition="{data.tx_mask_infobox_title}">
+    {data.tx_mask_infobox_title}
+</f:if>
+<f:if condition="{data.tx_mask_infobox_text}">
+    {data.tx_mask_infobox_text -> f:format.nl2br()}
+</f:if>
+<f:if condition="{data.tx_mask_infobox_button_text}">
+    {data.tx_mask_infobox_button_text}
+</f:if>
+<f:if condition="{data.tx_mask_infobox_button_url}">
+    <f:link.typolink parameter="{data.tx_mask_infobox_button_url}"></f:link.typolink>
+</f:if>

@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:vv="Vogelvlug\FotografieVogelSitepackage\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="parallax--container heroteaser">
+    <div class="parallax--background">
+        <f:if condition="{data_tx_fotografievogelmaskexport_heroteaser_image}">
+            <f:for each="{data_tx_fotografievogelmaskexport_heroteaser_image}" as="file">
+                <f:image image="{file}" alt="{file.alternative}" title="{file.title}" />
+            </f:for>
+        </f:if>
+    </div>
+    <div class="parallax--foreground heroteaser--content--wrapper">
+        <div class="parallax--foreground heroteaser--content--wrapper">
+            <div class="heroteaser--content">
+                <div class="heroteaser--content--box">
+                    <f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_tagline}">
+                        <div class="heroteaser--tagline">
+                            {data.tx_fotografievogelmaskexport_heroteaser_tagline}
+                        </div>
+                    </f:if>
+
+                    <f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_title}">
+                        <div class="heroteaser--title">
+                            <h1>{data.tx_fotografievogelmaskexport_heroteaser_title}</h1>
+                        </div>
+                    </f:if>
+
+                    <f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_description}">
+                        <div class="heroteaser--description">
+                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.tx_fotografievogelmaskexport_heroteaser_description}</f:format.html>
+                        </div>
+                    </f:if>
+
+                    <f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_cta}">
+                        <div class="button">
+                            <f:link.typolink parameter="{data.tx_fotografievogelmaskexport_heroteaser_cta}" parts-as="parts">
+                                {parts.title}
+                                <f:image src="EXT:fotografie_vogel_sitepackage/Resources/Public/Icons/ArrowForwardWhite.svg" />
+                            </f:link.typolink>
+                        </div>
+                    </f:if>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<f:if condition="{data.tx_mask_footer_bank_name}">
+    {data.tx_mask_footer_bank_name -> f:format.nl2br()}
+</f:if>
+<f:if condition="{data.tx_mask_footer_bank_details}">
+    {data.tx_mask_footer_bank_details -> f:format.nl2br()}
+</f:if>
+<f:if condition="{data.tx_mask_footer_donate_page}">
+    <f:link.typolink parameter="{data.tx_mask_footer_donate_page}"></f:link.typolink>
+</f:if>

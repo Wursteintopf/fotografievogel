@@ -1,0 +1,31 @@
+tt_content.fotografievogelmaskexport_heroteaser = FLUIDTEMPLATE
+tt_content.fotografievogelmaskexport_heroteaser {
+    templateName = HeroTeaser
+    layoutRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Layouts/
+    partialRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Partials/
+    templateRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Templates/ContentElements/
+}
+
+tt_content.fotografievogelmaskexport_headerteaser = FLUIDTEMPLATE
+tt_content.fotografievogelmaskexport_headerteaser {
+    templateName = HeaderTeaser
+    layoutRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Layouts/
+    partialRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Partials/
+    templateRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Templates/ContentElements/
+}
+
+tt_content.fotografievogelmaskexport_contentteaser = FLUIDTEMPLATE
+tt_content.fotografievogelmaskexport_contentteaser {
+    templateName = HeroTeaser
+    layoutRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Layouts/
+    partialRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Partials/
+    templateRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Templates/ContentElements/
+}
+
+tt_content.fotografievogelmaskexport_gallery = FLUIDTEMPLATE
+tt_content.fotografievogelmaskexport_gallery {
+    templateName = HeroTeaser
+    layoutRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Layouts/
+    partialRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Partials/
+    templateRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Templates/ContentElements/
+}

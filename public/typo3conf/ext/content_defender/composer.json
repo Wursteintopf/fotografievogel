@@ -1,0 +1,54 @@
+{
+    "name": "ichhabrecht/content-defender",
+    "description": "Define allowed or denied content element types in your backend layouts",
+    "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3 CMS",
+        "content",
+        "restrict",
+        "backend"
+    ],
+    "homepage": "https://github.com/IchHabRecht/content_defender",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "authors": [
+        {
+            "name": "Nicole Cordes",
+            "email": "typo3@cordes.co",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">= 7.0, < 7.5",
+        "typo3/cms-backend": "^8.7 || ^9.5 || ^10.4"
+    },
+    "require-dev": {
+        "nimut/testing-framework": "5.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "IchHabRecht\\ContentDefender\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IchHabRecht\\ContentDefender\\Tests\\": "Tests/"
+        }
+    },
+    "replace": {
+        "typo3-ter/content-defender": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "content_defender",
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "app-dir": ".Build",
+            "web-dir": ".Build/public"
+        }
+    }
+}

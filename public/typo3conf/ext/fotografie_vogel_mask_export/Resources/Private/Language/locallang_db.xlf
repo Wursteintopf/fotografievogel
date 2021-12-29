@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2021-12-29T12:04:31+00:00" product-name="fotografie_vogel_mask_export">
+    <header/>
+    <body>
+      <trans-unit id="tx_fotografievogelmaskexport_contentteaser_element">
+        <source>tx_fotografievogelmaskexport_contentteaser_element</source>
+      </trans-unit>
+      <trans-unit id="tx_fotografievogelmaskexport_contentteaser_element.tx_fotografievogelmaskexport_contentteaser_image">
+        <source>Teaser Bild</source>
+      </trans-unit>
+      <trans-unit id="tx_fotografievogelmaskexport_contentteaser_element.tx_fotografievogelmaskexport_contentteaser_link">
+        <source>Link</source>
+      </trans-unit>
+      <trans-unit id="tx_fotografievogelmaskexport_contentteaser_element.tx_fotografievogelmaskexport_contentteaser_link_text">
+        <source>Text des Buttons</source>
+      </trans-unit>
+      <trans-unit id="tx_fotografievogelmaskexport_contentteaser_element.tx_fotografievogelmaskexport_contentteaser_text">
+        <source>Beschreibung</source>
+      </trans-unit>
+      <trans-unit id="tx_fotografievogelmaskexport_contentteaser_element.tx_fotografievogelmaskexport_contentteaser_title">
+        <source>Titel</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_contentteaser_description">
+        <source>Beschreibungstext des Teasers</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_contentteaser_element">
+        <source>Teaser Item</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_contentteaser_header">
+        <source>Titel des Teasers</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_gallery_image_item">
+        <source>Bild</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_gallery_title">
+        <source>Titel</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_headerteaser_image">
+        <source>Hintergrundbild</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_headerteaser_title">
+        <source>Überschrift</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_heroteaser_cta">
+        <source>Call To Action des HeroTeasers</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_heroteaser_description">
+        <source>Beschreibungstext des HeroTeasers</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_heroteaser_image">
+        <source>Bild im HeroTeaser</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_heroteaser_tagline">
+        <source>Tagline des HeroTeasers</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_heroteaser_title">
+        <source>Titel des HeroTeasers</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.div._fotografievogelmaskexport_">
+        <source>fotografie_vogel_mask_export</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.fotografievogelmaskexport_contentteaser">
+        <source>Content Teaser</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.fotografievogelmaskexport_gallery">
+        <source>Gallerie</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.fotografievogelmaskexport_headerteaser">
+        <source>Header Teaser</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.fotografievogelmaskexport_heroteaser">
+        <source>HeroTeaser</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

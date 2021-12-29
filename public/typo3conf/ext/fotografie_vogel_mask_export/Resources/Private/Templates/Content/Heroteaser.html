@@ -1,0 +1,23 @@
+<f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_tagline}">
+    {data.tx_fotografievogelmaskexport_heroteaser_tagline}<br />
+</f:if>
+
+<f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_title}">
+    {data.tx_fotografievogelmaskexport_heroteaser_title}<br />
+</f:if>
+
+<f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_description}">
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.tx_fotografievogelmaskexport_heroteaser_description}</f:format.html><br />
+</f:if>
+
+<f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_cta}">
+    <f:link.page pageUid="{data.tx_fotografievogelmaskexport_heroteaser_cta}">{data.tx_fotografievogelmaskexport_heroteaser_cta}</f:link.page><br />
+</f:if>
+
+<f:if condition="{data_tx_fotografievogelmaskexport_heroteaser_image}">
+    <f:for each="{data_tx_fotografievogelmaskexport_heroteaser_image}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+
