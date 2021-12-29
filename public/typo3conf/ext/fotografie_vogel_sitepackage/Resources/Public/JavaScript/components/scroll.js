@@ -11,14 +11,16 @@ const calculateScroll = () => {
     header.classList.remove('header--scrolled');
   }
 
-  const parallaxElements = Array.from(document.getElementsByClassName('parallax--background'))
+  const parallaxElements = Array.from(document.getElementsByClassName('parallax--container'))
 
-  parallaxElements.forEach(element => {
-    const rect = element.getBoundingClientRect()
+  parallaxElements.forEach(parent => {
+    const rect = parent.getBoundingClientRect()
     const overScrolled = document.documentElement.scrollTop - rect.x
+    const element = parent.children[0]
 
     if (overScrolled > 0) {
-      element.style.top = '-' + overScrolled * 0.3 + 'px'
+      const scrollPos = (overScrolled/rect.height) * (element.scrollHeight - rect.height)
+      element.style.top = '-' + scrollPos + 'px'
     } else {
       element.style.top = '0'
     }
