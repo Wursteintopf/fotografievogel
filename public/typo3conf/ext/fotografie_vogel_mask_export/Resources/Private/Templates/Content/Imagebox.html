@@ -16,7 +16,7 @@
 
 <f:if condition="{data_tx_fotografievogelmaskexport_imagebox_image}">
     <f:for each="{data_tx_fotografievogelmaskexport_imagebox_image}" as="file">
-        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="600" height="600" /><br />
         {file.description} / {file.identifier}<br />
     </f:for>
 </f:if>
