@@ -51,8 +51,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Vogelvlug\\SahakomSitepackage\\": "public/typo3conf/ext/fotografievogel_sitepackage/Classes",
-			"Vogelvlug\\SahakomMaskExport\\": "public/typo3conf/ext/sahakom_mask_export/Classes"
+			"Vogelvlug\\FotografieVogelSitepackage\\\\": "public/typo3conf/ext/fotografie_vogel_sitepackage/Classes",
+			"Vogelvlug\\FotografieVogelMaskExport\\\\": "public/typo3conf/ext/fotografie_vogel_mask_export/Classes"
 		}
 	}
 }
