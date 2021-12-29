@@ -51,8 +51,8 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Vogelvlug\\FotografieVogelSitepackage\\\\": "public/typo3conf/ext/fotografie_vogel_sitepackage/Classes",
-			"Vogelvlug\\FotografieVogelMaskExport\\\\": "public/typo3conf/ext/fotografie_vogel_mask_export/Classes"
+			"Vogelvlug\\FotografieVogelSitepackage\\": "public/typo3conf/ext/fotografie_vogel_sitepackage/Classes",
+			"Vogelvlug\\FotografieVogelMaskExport\\": "public/typo3conf/ext/fotografie_vogel_mask_export/Classes"
 		}
 	}
 }
