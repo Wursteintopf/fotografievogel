@@ -1,4 +1,8 @@
-base: 'http://localhost/'
+base: 'https://fotografievogel.de/'
+baseVariants:
+  -
+    base: 'http://localhost/'
+    condition: 'getenv("CURRENT_INSTANCE") == "local"'
 errorHandling: {  }
 languages:
   -
