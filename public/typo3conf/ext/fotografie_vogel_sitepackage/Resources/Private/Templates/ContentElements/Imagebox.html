@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      xmlns:vv="Vogelvlug\FotografieVogelSitepackage\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="container imagebox {f:if(condition: '{data.tx_fotografievogelmaskexport_imagebox_alignment}==2', then: 'imagebox--flipped', else: '')}">
+    <div class="imagebox--content">
+        <f:if condition="{data.tx_fotografievogelmaskexport_imagebox_header}">
+            <h2>{data.tx_fotografievogelmaskexport_imagebox_header}</h2>
+        </f:if>
+
+        <f:if condition="{data.tx_fotografievogelmaskexport_imagebox_text}">
+            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.tx_fotografievogelmaskexport_imagebox_text}</f:format.html><br />
+        </f:if>
+    </div>
+    <f:if condition="{data_tx_fotografievogelmaskexport_imagebox_image}">
+        <f:for each="{data_tx_fotografievogelmaskexport_imagebox_image}" as="file">
+            <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="600" />
+        </f:for>
+    </f:if>
+</div>

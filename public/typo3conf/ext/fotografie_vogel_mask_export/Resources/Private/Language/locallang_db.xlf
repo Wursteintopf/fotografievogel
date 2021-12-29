@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" date="2021-12-29T12:04:31+00:00" product-name="fotografie_vogel_mask_export">
+  <file source-language="en" datatype="plaintext" original="messages" date="2021-12-29T18:24:35+00:00" product-name="fotografie_vogel_mask_export">
     <header/>
     <body>
       <trans-unit id="tx_fotografievogelmaskexport_contentteaser_element">
@@ -57,6 +57,24 @@
       <trans-unit id="tt_content.tx_fotografievogelmaskexport_heroteaser_title">
         <source>Titel des HeroTeasers</source>
       </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_imagebox_alignment">
+        <source>Ausrichtung der Imagebox</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_imagebox_header">
+        <source>Überschrift</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_imagebox_image">
+        <source>Bild</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_imagebox_text">
+        <source>Text</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_imagebox_alignment.I.0">
+        <source>links</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_fotografievogelmaskexport_imagebox_alignment.I.1">
+        <source>rechts</source>
+      </trans-unit>
       <trans-unit id="tt_content.CType.div._fotografievogelmaskexport_">
         <source>fotografie_vogel_mask_export</source>
       </trans-unit>
@@ -71,6 +89,9 @@
       </trans-unit>
       <trans-unit id="tt_content.CType.fotografievogelmaskexport_heroteaser">
         <source>HeroTeaser</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.fotografievogelmaskexport_imagebox">
+        <source>ImageBox</source>
       </trans-unit>
     </body>
   </file>

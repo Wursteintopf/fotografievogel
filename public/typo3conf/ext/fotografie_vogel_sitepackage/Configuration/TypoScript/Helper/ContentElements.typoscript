@@ -29,3 +29,11 @@ tt_content.fotografievogelmaskexport_gallery {
     partialRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Partials/
     templateRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Templates/ContentElements/
 }
+
+tt_content.fotografievogelmaskexport_imagebox = FLUIDTEMPLATE
+tt_content.fotografievogelmaskexport_imagebox {
+    templateName = HeroTeaser
+    layoutRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Layouts/
+    partialRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Partials/
+    templateRootPaths.100 = EXT:fotografie_vogel_sitepackage/Resources/Private/Templates/ContentElements/
+}

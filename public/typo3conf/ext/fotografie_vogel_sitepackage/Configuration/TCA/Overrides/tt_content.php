@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') or die();
 call_user_func(function()
 {
-    $cropVariants = [
+    $sixteen = [
         'default' => [
             'title' => 'Default',
             'allowedAspectRatios' => [
@@ -14,8 +14,23 @@ call_user_func(function()
         ],
     ];
 
-    $table = 'tt_content';
-    $column = 'tx_fotografievogelmaskexport_gallery_image_item';
+    $one = [
+        'default' => [
+            'title' => 'Default',
+            'allowedAspectRatios' => [
+                '1 zu 1' => [
+                    'title' => '1 zu 1',
+                    'value' => 1
+                ],
+            ],
+        ],
+    ];
 
-    $GLOBALS['TCA'][$table]['columns'][$column]['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] = $cropVariants;
+    $table = 'tt_content';
+    $galleryImage = 'tx_fotografievogelmaskexport_gallery_image_item';
+    $cTypeImageBox = 'fotografievogelmaskexport_imagebox';
+    $imageBox = 'tx_fotografievogelmaskexport_imagebox_image';
+
+    $GLOBALS['TCA'][$table]['columns'][$galleryImage]['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] = $sixteen;
+    $GLOBALS['TCA'][$table]['types'][$cTypeImageBox]['columnsOverrides'][$imageBox]['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] = $one;
 });
