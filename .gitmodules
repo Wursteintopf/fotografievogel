@@ -1,0 +1,3 @@
+[submodule "public\\typo3conf\\ext\\vogelvlug_sitepackage"]
+	path = public\\typo3conf\\ext\\vogelvlug_sitepackage
+	url = https://github.com/Wursteintopf/vogelvlug_sitepackage
