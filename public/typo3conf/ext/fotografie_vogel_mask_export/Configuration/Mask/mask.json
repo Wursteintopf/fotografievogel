@@ -6,8 +6,7 @@
             "contentteaser",
             "gallery",
             "headerteaser",
-            "heroteaser",
-            "imagebox"
+            "heroteaser"
         ]
     },
     "sys_file_reference": {
@@ -30,11 +29,6 @@
             "tx_mask_heroteaser_image": {
                 "sys_file_reference": {
                     "tx_mask_heroteaser_image": "int(11) unsigned DEFAULT '0' NOT NULL"
-                }
-            },
-            "tx_mask_imagebox_image": {
-                "sys_file_reference": {
-                    "tx_mask_imagebox_image": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         }
@@ -115,29 +109,6 @@
                     "2": "rte"
                 },
                 "shortLabel": ""
-            },
-            "imagebox": {
-                "color": "#000000",
-                "columns": [
-                    "tx_mask_imagebox_alignment",
-                    "tx_mask_imagebox_header",
-                    "tx_mask_imagebox_text",
-                    "tx_mask_imagebox_image"
-                ],
-                "description": "",
-                "icon": "",
-                "key": "imagebox",
-                "label": "ImageBox",
-                "labels": [
-                    "Ausrichtung der Imagebox",
-                    "\u00dcberschrift",
-                    "Text",
-                    "Bild"
-                ],
-                "options": {
-                    "2": "rte"
-                },
-                "shortLabel": "imagebox"
             }
         },
         "sql": {
@@ -199,26 +170,6 @@
             "tx_mask_heroteaser_title": {
                 "tt_content": {
                     "tx_mask_heroteaser_title": "tinytext"
-                }
-            },
-            "tx_mask_imagebox_alignment": {
-                "tt_content": {
-                    "tx_mask_imagebox_alignment": "tinytext"
-                }
-            },
-            "tx_mask_imagebox_header": {
-                "tt_content": {
-                    "tx_mask_imagebox_header": "tinytext"
-                }
-            },
-            "tx_mask_imagebox_image": {
-                "tt_content": {
-                    "tx_mask_imagebox_image": "int(11) unsigned DEFAULT '0' NOT NULL"
-                }
-            },
-            "tx_mask_imagebox_text": {
-                "tt_content": {
-                    "tx_mask_imagebox_text": "mediumtext"
                 }
             }
         },
@@ -522,110 +473,6 @@
                 "description": "",
                 "exclude": "1",
                 "key": "heroteaser_title",
-                "l10n_mode": ""
-            },
-            "tx_mask_imagebox_alignment": {
-                "config": {
-                    "autoSizeMax": "",
-                    "behaviour": {
-                        "allowLanguageSynchronization": "0"
-                    },
-                    "fileFolder": "",
-                    "fileFolder_extList": "",
-                    "fileFolder_recursions": "",
-                    "foreign_table": "",
-                    "foreign_table_where": "",
-                    "items": [
-                        [
-                            "links",
-                            "1"
-                        ],
-                        [
-                            "rechts",
-                            "2"
-                        ]
-                    ],
-                    "maxitems": "",
-                    "renderType": "selectSingle",
-                    "size": "",
-                    "type": "select"
-                },
-                "description": "",
-                "exclude": "1",
-                "key": "imagebox_alignment",
-                "l10n_mode": ""
-            },
-            "tx_mask_imagebox_header": {
-                "config": {
-                    "autocomplete": "0",
-                    "behaviour": {
-                        "allowLanguageSynchronization": "0"
-                    },
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "mode": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "description": "",
-                "exclude": "1",
-                "key": "imagebox_header",
-                "l10n_mode": ""
-            },
-            "tx_mask_imagebox_image": {
-                "config": {
-                    "appearance": {
-                        "collapseAll": "0",
-                        "expandSingle": "0",
-                        "fileUploadAllowed": "1",
-                        "showAllLocalizationLink": "1",
-                        "showPossibleLocalizationRecords": "1",
-                        "showRemovedLocalizationRecords": "1",
-                        "showSynchronizationLink": "0",
-                        "useSortable": "0"
-                    },
-                    "behaviour": {
-                        "allowLanguageSynchronization": "0"
-                    },
-                    "filter": [
-                        {
-                            "parameters": {
-                                "allowedFileExtensions": ""
-                            }
-                        }
-                    ],
-                    "maxitems": "",
-                    "minitems": ""
-                },
-                "description": "",
-                "exclude": "1",
-                "imageoverlayPalette": "1",
-                "key": "imagebox_image",
-                "l10n_mode": "",
-                "options": "file"
-            },
-            "tx_mask_imagebox_text": {
-                "config": {
-                    "behaviour": {
-                        "allowLanguageSynchronization": "0"
-                    },
-                    "cols": "",
-                    "default": "",
-                    "enableRichtext": "1",
-                    "eval": "",
-                    "max": "",
-                    "mode": "",
-                    "placeholder": "",
-                    "rows": "",
-                    "type": "text",
-                    "wrap": "off"
-                },
-                "description": "",
-                "exclude": "1",
-                "key": "imagebox_text",
                 "l10n_mode": ""
             }
         }

@@ -11,13 +11,27 @@
   &--elements {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @include m {
+      flex-direction: column;
+    }
 
     &--element {
-      width: 380px;
+      width: 32%;
       height: 292px;
       background-size: cover;
       background-position: center;
       position: relative;
+
+      @include m {
+        margin-bottom: $spacing-M;
+        width: 70%;
+      }
+
+      @include s {
+        width: 100%;
+      }
 
       &--box {
         background-color: $color-blue-semitransparent;

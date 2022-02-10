@@ -32,14 +32,6 @@ mod.wizards.newContentElement.wizardItems.common {
                     CType = fotografievogelmaskexport_heroteaser
                 }
             }
-            imagebox {
-                iconIdentifier = tx_fotografievogelmaskexport_imagebox
-                title = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.imagebox_title
-                description = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.imagebox_description
-                tt_content_defValues {
-                    CType = fotografievogelmaskexport_imagebox
-                }
-            }
     }
-    show := addToList(contentteaser, gallery, headerteaser, heroteaser, imagebox)
+    show := addToList(contentteaser, gallery, headerteaser, heroteaser)
 }

@@ -4,7 +4,7 @@
       data-namespace-typo3-fluid="true">
 
 <div class="header" id="header">
-    <div class="header--content">
+    <div class="container container--mobile-padding header--content">
         <a class="logo" href="/">Fotografie Vogel</a>
         <div class="menu">
             <f:for each="{mainnavigation}" as="mainnavigationItem">
@@ -14,6 +14,14 @@
                     </a>
                 </div>
             </f:for>
+        </div>
+
+        <div class="mobilemenu">
+            <button id="hamburger" class="hamburger hamburger--elastic" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
         </div>
     </div>
 </div>

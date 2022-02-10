@@ -1,0 +1,24 @@
+@mixin xl {
+  @media (max-width: #{$break-xl}) {
+    @content;
+  }
+}
+
+@mixin l {
+  @media (max-width: #{$break-lg}) {
+    @content;
+  }
+}
+
+@mixin m {
+  @media (max-width: #{$break-md}) {
+    @content;
+  }
+}
+
+@mixin s {
+  @media (max-width: #{$break-sm}) {
+    @content;
+  }
+}
+

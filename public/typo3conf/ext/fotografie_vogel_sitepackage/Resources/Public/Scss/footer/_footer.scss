@@ -12,6 +12,10 @@
   &--content {
     display: flex;
     justify-content: space-between;
+
+    @include s {
+      flex-direction: column;
+    }
   }
 
   &--contact {
@@ -20,6 +24,11 @@
 
   &--social-media {
     text-align: right;
+
+    @include s {
+      text-align: left;
+      margin-top: $spacing-L;
+    }
 
     &--links {
       font-size: 20px;
@@ -51,12 +60,24 @@
   &--content {
     display: flex;
     justify-content: space-between;
+
+    @include l {
+      flex-direction: column;
+    }
   }
 
   &--links {
+    @include l {
+      margin-top: $spacing-M;
+    }
+
     a {
       margin-left: 20px;
       text-decoration: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 }

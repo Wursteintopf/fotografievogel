@@ -10,11 +10,7 @@ CREATE TABLE tt_content (
     tx_fotografievogelmaskexport_heroteaser_description mediumtext,
     tx_fotografievogelmaskexport_heroteaser_image int(11) unsigned DEFAULT '0' NOT NULL,
     tx_fotografievogelmaskexport_heroteaser_tagline tinytext,
-    tx_fotografievogelmaskexport_heroteaser_title tinytext,
-    tx_fotografievogelmaskexport_imagebox_alignment tinytext,
-    tx_fotografievogelmaskexport_imagebox_header tinytext,
-    tx_fotografievogelmaskexport_imagebox_image int(11) unsigned DEFAULT '0' NOT NULL,
-    tx_fotografievogelmaskexport_imagebox_text mediumtext
+    tx_fotografievogelmaskexport_heroteaser_title tinytext
 );
 CREATE TABLE tx_fotografievogelmaskexport_contentteaser_element (
     parentid int(11) DEFAULT '0' NOT NULL,

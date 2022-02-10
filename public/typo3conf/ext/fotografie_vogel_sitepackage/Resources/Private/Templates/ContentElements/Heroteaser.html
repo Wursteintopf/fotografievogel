@@ -13,7 +13,7 @@
     </div>
     <div class="parallax--foreground heroteaser--content--wrapper">
         <div class="parallax--foreground heroteaser--content--wrapper">
-            <div class="heroteaser--content">
+            <div class="container container--mobile-padding heroteaser--content">
                 <div class="heroteaser--content--box">
                     <f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_tagline}">
                         <div class="heroteaser--tagline">
@@ -24,12 +24,6 @@
                     <f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_title}">
                         <div class="heroteaser--title">
                             <h1>{data.tx_fotografievogelmaskexport_heroteaser_title}</h1>
-                        </div>
-                    </f:if>
-
-                    <f:if condition="{data.tx_fotografievogelmaskexport_heroteaser_description}">
-                        <div class="heroteaser--description">
-                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.tx_fotografievogelmaskexport_heroteaser_description}</f:format.html>
                         </div>
                     </f:if>
 

@@ -15,12 +15,12 @@
   }
 
   &--content {
-    width: $page-width;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: $header-height;
+
+    
   }
 }
 
@@ -40,6 +40,10 @@
 .menu {
   display: flex;
 
+  @include m {
+    display: none;
+  }
+
   &--item {
     margin-left: 50px;
 
@@ -49,5 +53,13 @@
       text-transform: uppercase;
       font-weight: 600;
     }
+  }
+}
+
+.mobilemenu {
+  display: none;
+
+  @include m {
+    display: initial;
   }
 }

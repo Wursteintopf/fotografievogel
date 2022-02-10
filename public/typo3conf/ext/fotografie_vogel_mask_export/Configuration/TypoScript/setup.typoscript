@@ -87,22 +87,3 @@ tt_content.fotografievogelmaskexport_heroteaser {
         as = data_tx_fotografievogelmaskexport_heroteaser_image
     }
 }
-tt_content.fotografievogelmaskexport_imagebox = FLUIDTEMPLATE
-tt_content.fotografievogelmaskexport_imagebox {
-    layoutRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Layouts/
-    layoutRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.layoutRootPath}
-    partialRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Partials/
-    partialRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.partialRootPath}
-    templateRootPaths.0 = EXT:fotografie_vogel_mask_export/Resources/Private/Templates/Content/
-    templateRootPaths.10 = {$plugin.tx_fotografievogelmaskexport.view.templateRootPath}
-    templateName = Imagebox
-    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-    dataProcessing.10 {
-        if.isTrue.field = tx_fotografievogelmaskexport_imagebox_image
-        references {
-            fieldName = tx_fotografievogelmaskexport_imagebox_image
-            table = tt_content
-        }
-        as = data_tx_fotografievogelmaskexport_imagebox_image
-    }
-}
