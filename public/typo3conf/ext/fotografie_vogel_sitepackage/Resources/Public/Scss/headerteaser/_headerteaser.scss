@@ -11,9 +11,17 @@
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     margin-bottom: 180px;
 
+    @include s {
+      width: 100vw;
+    }
+
     &--box {
       width: 600px;
       margin-bottom: 90px;
+
+      @include s {
+        width: 100vw;
+      }
     }
 
     &--wrapper {

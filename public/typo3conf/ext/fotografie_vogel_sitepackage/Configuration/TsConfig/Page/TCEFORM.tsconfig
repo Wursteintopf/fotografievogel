@@ -6,6 +6,15 @@ TCEFORM {
 
     }
     tt_content {
-
+        layout {
+            altLabels {
+                1 = Text zentriert, Content 70%
+            }
+        }
+        frame_class {
+            addItems {
+                containerbox = Container mit Padding
+            }
+        }
     }
 }

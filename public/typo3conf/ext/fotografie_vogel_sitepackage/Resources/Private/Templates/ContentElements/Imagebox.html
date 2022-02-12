@@ -4,7 +4,7 @@
       xmlns:vv="Vogelvlug\FotografieVogelSitepackage\ViewHelpers"
       data-namespace-typo3-fluid="true">
 
-<div class="container imagebox {f:if(condition: '{data.tx_fotografievogelmaskexport_imagebox_alignment}==2', then: 'imagebox--flipped', else: '')}">
+<div class="container container--mobile-padding imagebox {f:if(condition: '{data.tx_fotografievogelmaskexport_imagebox_alignment}==2', then: 'imagebox--flipped', else: '')}">
     <div class="imagebox--content">
         <f:if condition="{data.tx_fotografievogelmaskexport_imagebox_header}">
             <h2>{data.tx_fotografievogelmaskexport_imagebox_header}</h2>
@@ -14,9 +14,11 @@
             <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.tx_fotografievogelmaskexport_imagebox_text}</f:format.html><br />
         </f:if>
     </div>
-    <f:if condition="{data_tx_fotografievogelmaskexport_imagebox_image}">
-        <f:for each="{data_tx_fotografievogelmaskexport_imagebox_image}" as="file">
-            <f:image image="{file}" width="600" />
-        </f:for>
-    </f:if>
+    <div class="imagebox--image">
+        <f:if condition="{data_tx_fotografievogelmaskexport_imagebox_image}">
+            <f:for each="{data_tx_fotografievogelmaskexport_imagebox_image}" as="file">
+                <f:image image="{file}" width="800" />
+            </f:for>
+        </f:if>
+    </div>
 </div>

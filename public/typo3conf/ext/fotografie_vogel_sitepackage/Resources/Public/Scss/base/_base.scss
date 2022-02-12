@@ -58,3 +58,37 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
+
+.frame {
+  width: $page-width;
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
+
+  @include xl {
+    width: 100vw;
+  }
+
+  &-layout-1 {
+    text-align: center;
+
+    p {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+  }
+
+  &-containerbox {
+    @include xl {
+      padding-left: $spacing-L;
+      padding-right: $spacing-L;
+    }
+  }
+
+  &-space-before-large {
+    margin-top: $spacing-L;
+  }
+
+  &-space-after-large {
+    margin-bottom: $spacing-L;
+  }
+}
