@@ -1,3 +1,5 @@
+import { burgerMenuOpen } from "./hamburger.js";
+
 const calculateScroll = () => {
   const topDist = 50;
   const header = document.getElementById('header');
@@ -6,7 +8,7 @@ const calculateScroll = () => {
   {
     header.classList.add('header--scrolled');
   }
-  else
+  else if (!burgerMenuOpen)
   {
     header.classList.remove('header--scrolled');
   }
@@ -21,7 +23,7 @@ const calculateScroll = () => {
     if (overScrolled > 0) {
       const scrollPos = (overScrolled/rect.height) * (element.scrollHeight - rect.height)
       element.style.top = '-' + scrollPos + 'px'
-      const scaleSize = 1 + (overScrolled/rect.height) * 0.1
+      const scaleSize = 1 + (overScrolled/rect.height) * 0.2
       element.style.transform = 'scale(' + scaleSize + ')'
     } else {
       element.style.top = '0'

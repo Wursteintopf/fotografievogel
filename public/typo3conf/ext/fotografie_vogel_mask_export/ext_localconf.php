@@ -33,6 +33,13 @@ $iconRegistry->registerIcon(
         'source' => 'EXT:fotografie_vogel_mask_export/Resources/Public/Icons/Content/heroteaser.png',
     ]
 );
+$iconRegistry->registerIcon(
+    'tx_fotografievogelmaskexport_imagebox',
+    \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+    [
+        'source' => 'EXT:fotografie_vogel_mask_export/Resources/Public/Icons/Content/imagebox.png',
+    ]
+);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fotografie_vogel_mask_export/Configuration/TsConfig/Page/NewContentElementWizard.tsconfig">'

@@ -19,6 +19,7 @@ class PageLayoutViewDrawItem implements PageLayoutViewDrawItemHookInterface
     'fotografievogelmaskexport_gallery' => 'Gallery',
     'fotografievogelmaskexport_headerteaser' => 'Headerteaser',
     'fotografievogelmaskexport_heroteaser' => 'Heroteaser',
+    'fotografievogelmaskexport_imagebox' => 'Imagebox',
 ];
 
     /**

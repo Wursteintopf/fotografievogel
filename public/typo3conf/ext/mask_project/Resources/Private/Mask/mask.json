@@ -5,7 +5,8 @@
             "heroteaser",
             "headerteaser",
             "contentteaser",
-            "gallery"
+            "gallery",
+            "imagebox"
         ],
         "vendorName": "Vogelvlug"
     },
