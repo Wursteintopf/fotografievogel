@@ -24,10 +24,10 @@ const calculateScroll = () => {
       const scrollPos = (overScrolled/rect.height) * (element.scrollHeight - rect.height)
       element.style.top = '-' + scrollPos + 'px'
       const scaleSize = 1 + (overScrolled/rect.height) * 0.2
-      element.style.transform = 'scale(' + scaleSize + ')'
+      // element.style.transform = 'scale(' + scaleSize + ')'
     } else {
       element.style.top = '0'
-      element.style.transform = 'scale(1)'
+      // element.style.transform = 'scale(1)'
     }
   })
 }

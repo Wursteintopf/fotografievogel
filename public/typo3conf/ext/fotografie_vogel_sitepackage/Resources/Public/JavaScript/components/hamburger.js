@@ -15,16 +15,16 @@ export function initBurgerMenu() {
             burgerButton.classList.add('is-active');
             mobileMenu.classList.add('mobilemenu--list-visible');
             header.classList.add('header--scrolled');
-            setTimeout(() => {
-                notHeader.classList.add('not-header--blurred');
-            }, 200)
+            // setTimeout(() => {
+            //     notHeader.classList.add('not-header--blurred');
+            // }, 200)
         }
         else
         {
             burgerMenuOpen = false;
             burgerButton.classList.remove('is-active');
             mobileMenu.classList.remove('mobilemenu--list-visible');
-            notHeader.classList.remove('not-header--blurred');
+            // notHeader.classList.remove('not-header--blurred');
             if (document.documentElement.scrollTop < topDist)
             {
                 header.classList.remove('header--scrolled');
