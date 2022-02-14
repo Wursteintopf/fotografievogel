@@ -7,9 +7,11 @@
 <v:asset.style path="EXT:fotografie_vogel_sitepackage/Resources/Public/Css/swiper-bundle.min.css" name="swiper_css" dependencies="common_css" />
 <v:asset.script path="EXT:fotografie_vogel_sitepackage/Resources/Public/JavaScript/components/swiper-bundle.min.js" name="swiper-bundle"/>
 
-<div class="container">
+<div class="container container--mobile-padding">
     <div class="gallery">
         <h2>{data.tx_fotografievogelmaskexport_gallery_title}</h2>
+
+        <f:format.html>{data.tx_fotografievogelmaskexport_gallery_description}</f:format.html>
 
         <div class="swiper-container">
             <div class="swiper-wrapper">

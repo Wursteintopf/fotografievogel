@@ -19,7 +19,9 @@
   }
 
   &--contact {
-
+    a {
+      color: $color-white;
+    }
   }
 
   &--social-media {

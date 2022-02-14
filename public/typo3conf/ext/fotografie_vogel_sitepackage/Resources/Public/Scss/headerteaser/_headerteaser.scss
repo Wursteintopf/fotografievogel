@@ -3,13 +3,29 @@
   width: 100%;
   color: $color-white;
 
+  @include xl {
+    height: 400px;
+  }
+
+  @include m {
+    height: 300px;
+  }
+
   &--content {
     width: 600px;
     margin: 0 auto;
     position: relative;
     z-index: 100;
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    margin-bottom: 180px;
+    padding-top: 280px;
+
+    @include xl {
+      padding-top: 180px;
+    }
+
+    @include m {
+      padding-top: 120px;
+    }
 
     @include s {
       width: 100vw;
@@ -26,12 +42,14 @@
 
     &--wrapper {
       bottom: 0;
+      height: 100%;
 
       &::after {
         content: '';
         background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 100%);
+        display: block;
         width: 100%;
-        height: 500px;
+        height: 100%;
         position: absolute;
         bottom: 0;
       }

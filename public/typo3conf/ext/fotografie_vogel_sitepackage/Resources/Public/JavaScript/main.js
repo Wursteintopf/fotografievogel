@@ -4,6 +4,6 @@ import {initBurgerMenu} from "./components/hamburger.js";
 
 document.addEventListener('DOMContentLoaded', () => {
   initializeScroll();
-  initGallery();
   initBurgerMenu();
+  initGallery();
 });

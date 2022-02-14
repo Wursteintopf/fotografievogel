@@ -1,16 +1,26 @@
 .swiper-container {
   max-width: $page-width;
+  margin-top: $spacing-M;
   margin-left: 0 !important;
 
   img {
     max-width: 100%;
     height: 100%;
   }
+
+  @include xl {
+    max-width: calc(100vw - 2 * $spacing-L);
+  }
+
+  @include s {
+    max-width: calc(100vw - 2 * $spacing-M);
+  }
 }
 
 .gallery {
-  padding-bottom: 30px;
+  margin: $spacing-L 0 $spacing-XL 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }

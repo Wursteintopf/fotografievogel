@@ -91,6 +91,7 @@
                 "color": "#000000",
                 "columns": [
                     "tx_mask_gallery_title",
+                    "tx_mask_gallery_description",
                     "tx_mask_gallery_image_item"
                 ],
                 "description": "Gallerieelement zur Anzeige von Bildern als Galerie",
@@ -99,8 +100,12 @@
                 "label": "Gallerie",
                 "labels": [
                     "Titel",
+                    "Beschreibung",
                     "Bild"
                 ],
+                "options": {
+                    "1": "rte"
+                },
                 "shortLabel": "gallery"
             },
             "h1": {
@@ -256,6 +261,11 @@
             "tx_mask_footer_button_url": {
                 "tt_content": {
                     "tx_mask_footer_button_url": "tinytext"
+                }
+            },
+            "tx_mask_gallery_description": {
+                "tt_content": {
+                    "tx_mask_gallery_description": "mediumtext"
                 }
             },
             "tx_mask_gallery_image_item": {
@@ -534,6 +544,27 @@
                 "description": "",
                 "exclude": "1",
                 "key": "footer_button_url",
+                "l10n_mode": ""
+            },
+            "tx_mask_gallery_description": {
+                "config": {
+                    "behaviour": {
+                        "allowLanguageSynchronization": "0"
+                    },
+                    "cols": "",
+                    "default": "",
+                    "enableRichtext": "1",
+                    "eval": "",
+                    "max": "",
+                    "mode": "",
+                    "placeholder": "",
+                    "rows": "",
+                    "type": "text",
+                    "wrap": "off"
+                },
+                "description": "",
+                "exclude": "1",
+                "key": "gallery_description",
                 "l10n_mode": ""
             },
             "tx_mask_gallery_image_item": {

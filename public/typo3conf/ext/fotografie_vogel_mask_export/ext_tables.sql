@@ -2,6 +2,7 @@ CREATE TABLE tt_content (
     tx_fotografievogelmaskexport_contentteaser_description mediumtext,
     tx_fotografievogelmaskexport_contentteaser_element int(11) unsigned DEFAULT '0' NOT NULL,
     tx_fotografievogelmaskexport_contentteaser_header tinytext,
+    tx_fotografievogelmaskexport_gallery_description mediumtext,
     tx_fotografievogelmaskexport_gallery_image_item int(11) unsigned DEFAULT '0' NOT NULL,
     tx_fotografievogelmaskexport_gallery_title tinytext,
     tx_fotografievogelmaskexport_headerteaser_image int(11) unsigned DEFAULT '0' NOT NULL,

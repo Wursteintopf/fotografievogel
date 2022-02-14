@@ -2,6 +2,10 @@
     <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_gallery_title" /></strong>
     {processedRow.tx_fotografievogelmaskexport_gallery_title} (raw={row.tx_fotografievogelmaskexport_gallery_title})<br>
 </f:if>
+<f:if condition="{processedRow.tx_fotografievogelmaskexport_gallery_description}">
+    <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_gallery_description" /></strong>
+    {processedRow.tx_fotografievogelmaskexport_gallery_description} (raw={row.tx_fotografievogelmaskexport_gallery_description})<br>
+</f:if>
 <f:if condition="{processedRow.tx_fotografievogelmaskexport_gallery_image_item}">
     <strong><f:translate key="LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_fotografievogelmaskexport_gallery_image_item" /></strong>
 <br><f:for each="{processedRow.tx_fotografievogelmaskexport_gallery_image_item}" as="item">

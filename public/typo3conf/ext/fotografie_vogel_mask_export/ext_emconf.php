@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "fotografie_vogel_mask_export".
  *
- * Auto generated 12-02-2022 07:34
+ * Auto generated 14-02-2022 20:54
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
